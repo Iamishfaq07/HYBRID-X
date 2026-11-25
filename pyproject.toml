@@ -1,0 +1,18 @@
+[project]
+name = "hybridx-local"
+version = "0.12.0"
+requires-python = ">=3.10"
+dependencies = []
+[project.optional-dependencies]
+privacy = ["cryptography>=44,<47"]
+reports = ["python-docx>=1.1,<2", "reportlab>=4.2,<5"]
+[project.scripts]
+hybridx = "hybridx.cli:main"
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+[tool.setuptools.packages.find]
+include = ["hybridx*"]
+
+[tool.setuptools.package-data]
+hybridx = ["web/*.html", "web/*.js", "web/*.css"]

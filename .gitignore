@@ -1,0 +1,12 @@
+.hybridx/
+*.gguf
+*.db
+*.db-*
+*.log
+profile*.json
+*-logs/
+__pycache__/
+.venv/
+
+build/
+*.part
